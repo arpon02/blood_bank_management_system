@@ -1,0 +1,444 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white ;
+  color: #3a3737;
+  line-height: 1.6;
+  
+}
+
+/* Header Section */
+header {
+  background-color: #892a1f;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #e74c3c;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/*multi nav */
+/* Add after your existing nav styles */
+
+.multi-row-nav {
+  background-color: #e74c3c;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 8px 0;
+  flex-wrap: wrap;
+}
+
+.nav-row a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.nav-row a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: visually separate the two rows */
+.nav-row-1 {
+  border-bottom: 1px solid #fff2;
+}
+
+
+/* Hero Section */
+.hero {
+  padding: 50px 20px;
+  text-align: center; /* fixed typo */
+  background: #ffffff;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.hero input[type="text"],
+.hero input[type="email"],
+.hero input[type="password"] {
+  width: 300px;     /* adjust to your liking */
+  padding: 4px;
+  font-size: 1rem;
+  margin-bottom: 1px;
+  box-sizing: border-box;
+}
+
+/* Button Styles */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn,
+.btn-outline {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+/* Solid Button */
+.btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #c0392b;
+}
+
+/* Outline Button */
+.btn-outline {
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+/* ...previous styles... */
+
+/* Table Styles for Blood Stock Search */
+table, th, td {
+  border: 5px solid #1a1818;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #eee;
+}
+/* Footer Section */
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.search-bar {
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #e74c3c;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+
+
+    /* Dropdown styles for navigation */
+.dropdown {
+      display: inline-block;
+      position: relative;
+    }
+.dropdown-content {
+      display: none;
+      position: absolute;
+      background: #fff;
+      min-width: 120px;
+      z-index: 1;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+.dropdown-content a {
+      color: #333;
+      padding: 8px 16px;
+      text-decoration: none;
+      display: block;
+    }
+.dropdown-content a:hover {
+      background: #f1f1f1;
+    }
+.dropdown:hover .dropdown-content {
+      display: block;
+    }
+.dropdown:hover > a {
+      background: #e0e0e0;
+    }
+ 
+
+
+
+/* Dashboard two-column flex layout */
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+	align-items:flex-start;  
+	
+    gap: 30px;
+    margin: 15px auto 0 auto;
+	min-width:600px;
+    max-width: 900px;
+    padding: 0 20px;
+	border-radius: 8px;
+	min-height:250px;
+	
+}
+
+.profile-details {
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 14px 16px;
+    background: #fafafa;
+    margin-top: 5px;
+    
+}
+
+.dashboard-left {
+    flex: 1;
+    min-width: 250px;
+    background: #fafafa;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px #eee;
+	min-height:150px;
+
+.dashboard-middle {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fafafa;
+    box-shadow: 0 2px 8px #eee;
+    padding: 24px 32px;
+    margin: 16px 0;
+    min-width: 100px;
+    max-width: 200px;
+    flex: 1;
+}	
+
+
+
+
+.dashboard-right {
+    flex: 1;
+    min-width: 300px;
+    background: #fafafa;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px #eee;
+	min-height:250px;
+
+}
+
+
+/*.dashboard-container2 {
+    display: flex;
+    justify-content: center;      /* Center horizontally
+    align-items: flex-start;      /* Align items to the top
+    width: 100%;                  /* Take full width of the page
+    min-height: 30vh;
+    margin-top: 20px;
+}
+.dashboard-mark_received {
+    border: 1px solid #ccc;
+    padding: 32px 36px;
+    border-radius: 12px;
+    background: #fafafa;
+    box-shadow: 0 2px 8px #eee;
+    text-align: center;       /* Center content inside the box
+    min-width: 340px;
+}  */
+
+
+
+
+
+
+.login-container button:hover {
+    background-color: #c0392b;
+}
+
+.receiver_user_id {
+    display: block;
+    margin: 20px auto 18px auto;
+    width: 80%;
+    max-width: 260px;
+    padding: 10px 12px;
+    font-size: 1.15rem;
+    border: 1.5px solid #e74c3c;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.2s;
+}
+#receiver_user_id:focus {
+    border: 1.5px solid #c0392b;
+    background: #fff8f6;
+}
+
+
+/* Dashboard summary table */
+.dashboard-table {
+    width: 100%;
+    border-collapse: separate;
+	border-spacing: 0;
+    margin-top: 1px;
+    border-radius: 5px; /* Rounded corners for the table */
+    overflow: hidden;   /* Ensures the round corners are visible */
+	border: 2px solid #444;
+}
+
+
+.dashboard-table th {
+    padding: 5px 5px;
+    text-align: left;
+    border: 1px solid #444; 
+	}
+
+
+.dashboard-table td {
+    padding: 5px 5px;
+    text-align: center;
+    border: 1px solid #444;
+	width: 20% ;
+	
+	
+	
+}
+
+/* Add this to explicitly set a border on the table rows */
+.dashboard-table tr {
+	
+	background: #fafafa;
+    
+}
+.dashboard-table th {
+    background: #fafafa;
+    width: 10%;
+	
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 700px) {
+    .dashboard-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .dashboard-left, .dashboard-right {
+        min-width: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.emergency-toggle-btn {
+        margin-left: 8px;
+        padding: 3px 10px;
+        border-radius: 5px;
+        border: none;
+        background: #e74c3c;
+        color: #fff;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: 0.2s;
+        vertical-align: middle;
+    }
+	
+	
+    
+.receiver-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;      /* aligns to the top */
+    width: 100%;
+    min-height: 30vh;
+    margin-top: 20px;
+}
+
+.receiver-box {
+    border: 1px solid #ccc;
+    padding: 32px 36px;
+    border-radius: 12px;
+    background: #fafafa;
+    box-shadow: 0 2px 8px #eee;
+    text-align: center;
+    min-width: 320px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.receiver-user-id-input {
+    display: block;
+    margin: 20px auto 18px auto;
+    width: 80%;
+    max-width: 260px;
+    padding: 10px 12px;
+    font-size: 1.15rem;
+    border: 1.5px solid #e74c3c;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.2s;
+}
+.receiver-user-id-input:focus {
+    border: 1.5px solid #c0392b;
+    background: #fff8f6;
+}   
