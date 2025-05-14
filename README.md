@@ -7,9 +7,11 @@ Using this website facilities can store information of blood donors,receivers,em
 In this website patients can easily search for emergency donors contact,available blood stocks,other facilities blood stocks.
 Facility authorities can update the information stored in their database.Dedicated Blood Bank can implement/integrate this website and database with their own .Admin can record blood receive event,donation event .After that the website will automatically update the blood stock in their facility.Anyone can register as user.Users can donate/receive blood,set their status as emergency donor,search for blood,filter donor according to locations.  
 
-
+### BLOOD STOCK & Emergency Blood Donors
+    Anyone  can search for available blood based on bloof group and 
+    rh factor.Can search emergency contact info filtered by location,blood group,rh factor.
 ### Register:
- Anyone can register as a user in a facility/organization/blood bank.Gets a USER ID.  
+    Anyone can register as a user in a facility/organization/blood bank.Gets a USER ID.  
 
 ### USER :
        Users can donate blood ,receive blood,see their profile, set them as emergency donor : yes /no 
@@ -22,6 +24,8 @@ Facility authorities can update the information stored in their database.Dedicat
      Users can donate blood.Admin will take just their USER ID into the sytem.the rest will be updated by the database  
 
 ### BLOOD RECEIVE :
-Users can receive blood from facilty just using their USER ID.Admin will take user ID & fetch available blood stock ,then mark any record as recived by the user
+    Users can receive blood from facilty just using their USER ID.Admin will take user ID & fetch available blood stock ,then mark any record as recived by the user
+
+    
        
        
